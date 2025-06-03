@@ -1,0 +1,24 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "a chat app made using javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dakshcodez/chat-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dakshcodez/chat-app/issues"
+  },
+  "homepage": "https://github.com/dakshcodez/chat-app#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "ws": "^8.18.2"
+  }
+}

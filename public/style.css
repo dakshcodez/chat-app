@@ -23,3 +23,13 @@ body {
   width: 100%;
   padding: 10px;
 }
+
+#sendButton{
+  display: block;
+  margin: 15px auto 0 auto;
+  background-color: rgb(162, 162, 227);
+  font-size: 1.5em;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+}

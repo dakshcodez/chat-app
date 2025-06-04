@@ -2,6 +2,7 @@ const ws = new WebSocket(`wss://${window.location.host}`);
 
 const messages = document.getElementById('messages');
 const input = document.getElementById('input');
+const sendButton = document.getElementById('sendButton');
 
 ws.onmessage = (event) => {
     const msg = document.createElement('div');
@@ -16,3 +17,8 @@ input.addEventListener('keypress', (e) => {
         input.value = '';
     }
 });
+
+function sendMessage(){
+    ws.send(input.value);
+    input.value = '';
+}

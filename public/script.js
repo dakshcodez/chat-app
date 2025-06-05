@@ -11,14 +11,17 @@ ws.onmessage = (event) => {
     messages.scrollTop = messages.scrollHeight;
 };
 
-input.addEventListener('keypress', (e) => {
-    if (e.key == 'Enter' && input.value) {
+function sendMessage(){
+    if (input.value) {
         ws.send(input.value);
         input.value = '';
     }
+}
+
+input.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        sendMessage();
+    }
 });
 
-function sendMessage(){
-    ws.send(input.value);
-    input.value = '';
-}
+sendButton.addEventListener('click', sendMessage);
